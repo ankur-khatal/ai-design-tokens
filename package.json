@@ -1,0 +1,28 @@
+{
+  "name": "ai-design-tokens",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-enhanced design tokens plugin for Figma and web",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "plugin:dev": "npm run dev --workspace=@ai-tokens/figma-plugin",
+    "plugin:build": "npm run build --workspace=@ai-tokens/figma-plugin",
+    "web:dev": "npm run dev --workspace=@ai-tokens/web-app",
+    "web:build": "npm run build --workspace=@ai-tokens/web-app"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@ai-tokens/figma-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-enhanced design tokens plugin for Figma",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@ai-tokens/shared": "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.90.0",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "esbuild": "^0.19.8",
+    "typescript": "^5.3.3"
+  }
+}

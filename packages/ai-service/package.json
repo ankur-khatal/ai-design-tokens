@@ -1,0 +1,21 @@
+{
+  "name": "@ai-tokens/ai-service",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI service for token generation and analysis",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@ai-tokens/shared": "*",
+    "@anthropic-ai/sdk": "^0.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3"
+  }
+}

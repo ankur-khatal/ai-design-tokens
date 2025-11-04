@@ -1,0 +1,23 @@
+{
+  "name": "AI Design Tokens",
+  "id": "ai-design-tokens",
+  "api": "1.0.0",
+  "main": "dist/plugin.js",
+  "ui": "dist/ui.html",
+  "editorType": [
+    "figma",
+    "figjam"
+  ],
+  "networkAccess": {
+    "allowedDomains": [
+      "https://api.anthropic.com"
+    ],
+    "reasoning": "AI token generation requires calling Anthropic's Claude API"
+  },
+  "permissions": [
+    "activeusers"
+  ],
+  "documentAccess": "dynamic-page",
+  "capabilities": [],
+  "enableProposedApi": false
+}
