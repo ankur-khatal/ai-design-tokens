@@ -11,7 +11,6 @@ import {
   TokenCollection,
   ReadTokensStudioResponse,
 } from '@ai-tokens/shared';
-import './styles.css';
 
 // Main App Component
 function App() {

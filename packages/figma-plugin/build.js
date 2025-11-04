@@ -46,31 +46,26 @@ const uiConfig = {
   outfile: 'dist/ui.js',
   platform: 'browser',
   target: 'es2020',
+  loader: {
+    '.css': 'text',
+  },
 };
 
 // Create HTML for UI
 const createUIHTML = () => {
+  // Read CSS file
+  const cssContent = fs.readFileSync(
+    path.join(__dirname, 'src/ui/styles.css'),
+    'utf-8'
+  );
+
   const html = `<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <title>AI Design Tokens</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 12px;
-      background: #ffffff;
-      color: #000000;
-    }
-    #root {
-      width: 100%;
-      height: 100vh;
-    }
+${cssContent}
   </style>
 </head>
 <body>
